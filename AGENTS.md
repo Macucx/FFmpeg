@@ -1,0 +1,18 @@
+# Agent workflow for this personal fork
+
+These instructions apply to work in this fork only; they are not an upstream FFmpeg policy. Read CONTRIBUTING.md, README.md, INSTALL.md, applicable source-directory guidance and the relevant task discussion before changes. Preserve licensing, upstream coding/testing conventions, release/API/ABI versioning and security rules. Do not import private policies, infrastructure details, captures, credentials or unrelated project records into this public repository.
+
+## Manual development workflow
+
+1. **Opus Max plans.** Inspect current source and existing tasks; reuse the correct issue. Define evidence, goal, scope/non-goals, ordered steps, dependencies, measurable acceptance, exact tests and operational boundaries. Separate facts, assumptions and blockers. Only unblocked plans are Ready for Sol. If this fork's issue tracker is unavailable, report that and retain the task specification in the review discussion; do not change repository settings or invent an issue. Planning does not start implementation.
+2. **Sol 6.1 Max implements.** After manual handoff, work on a dedicated branch, run relevant checks and open a linked PR against this fork's intended branch. Include head SHA, actual commands/results and limitations. Do not push directly to the default branch, merge, publish a release or deploy.
+3. **Separate Opus Max reviewer.** Use a review-only session distinct from planner and implementer. Inspect the actual full diff and evidence at the current head. Findings require stable IDs, severity, file/line, evidence, correction and validation. Separate blockers from optional improvements. Do not implement fixes in the reviewer session or claim self-review is independent.
+4. **Sol corrects the same PR.** Verify findings, fix valid defects, and reply per ID with fix commits/tests or evidence-based disagreement. Do not replace the PR or expand scope for routine corrections.
+5. **Three TOTAL rounds maximum.** Initial full review plus at most two focused rechecks of findings, fixes and affected regressions. Carry the ledger across sessions; no budget reset. Escalate unresolved blockers after round 3; exhaustion never means approval.
+6. **Latest-head gate.** READY — reviewed <SHA> requires all required gates passed and no blocker on the latest commit. New commits invalidate the verdict. Otherwise CHANGES NEEDED or BLOCKED; unperformed checks remain NOT TESTED. Review, authorized merge, upstream submission and release/deployment are separate actions.
+
+Manual T3/CLI handoffs are the default. No continuous orchestration, automatic model switching, agent launch, automatic merge or new GitHub Actions. Do not alter inherited upstream automation as a side effect. Markdown cannot configure models or grant permissions; disclose unavailable models/efforts and actual execution truthfully. Same-account reviews use COMMENT verdicts, not formal GitHub approval or enforced merge protection. Never bypass protections. Handoff: issue/task, PR, SHA, round, finding status, evidence, limitations and next action.
+
+## Fork versus upstream
+
+PRs here are the fork owner's review mechanism only. Upstream CONTRIBUTING.md specifies its own submission process; do not send this fork-specific policy upstream, open an upstream GitHub PR, email patches or change remotes without an explicit request. Preserve existing upstream Changelog and version lineage; this documentation-only workflow does not create an FFmpeg product release. Relevant build/FATE checks for code changes must be planned and their actual coverage recorded, not invented. Do not infer hardware encoding capability from compiled encoder names.
